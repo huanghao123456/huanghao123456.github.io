@@ -16,24 +16,22 @@
   <meta name="author" content="HuangHao">
   <meta name="keywords" content="">
   
-    <meta name="description" content="这里有东西被加密了，需要输入密码查看哦。">
+    <meta name="description" content="方案 1 通过RGB图像将样品模具按编号进行分类（使用深度学习图像分类，或OCR字符识别编号以区分模具，或手动输入编号挑选模具） 通过工业级线激光3D相机拍摄模具的点云图（也获得了深度图） 使用高斯球算法对点云图进行区域分割（深度相同的区域划分为一组，得到不同深度的多组区域） 分割后得到每个区域的深度信息，将其与正品模具的深度信息一一对比，从而判断样品模具在该区域是否堵塞  方案 2 给所有正品模">
 <meta property="og:type" content="article">
-<meta property="og:title" content="电控平移台调研">
-<meta property="og:url" content="http://example.com/2022/10/31/%E7%94%B5%E6%8E%A7%E5%B9%B3%E7%A7%BB%E5%8F%B0%E8%B0%83%E7%A0%94/index.html">
+<meta property="og:title" content="模具深度检测">
+<meta property="og:url" content="http://example.com/2022/11/08/%E6%A8%A1%E5%85%B7%E6%B7%B1%E5%BA%A6%E6%A3%80%E6%B5%8B/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="这里有东西被加密了，需要输入密码查看哦。">
+<meta property="og:description" content="方案 1 通过RGB图像将样品模具按编号进行分类（使用深度学习图像分类，或OCR字符识别编号以区分模具，或手动输入编号挑选模具） 通过工业级线激光3D相机拍摄模具的点云图（也获得了深度图） 使用高斯球算法对点云图进行区域分割（深度相同的区域划分为一组，得到不同深度的多组区域） 分割后得到每个区域的深度信息，将其与正品模具的深度信息一一对比，从而判断样品模具在该区域是否堵塞  方案 2 给所有正品模">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/page/home/table.webp">
-<meta property="article:published_time" content="2022-10-31T09:08:12.000Z">
-<meta property="article:modified_time" content="2022-11-08T09:02:54.018Z">
+<meta property="article:published_time" content="2022-11-08T11:31:00.000Z">
+<meta property="article:modified_time" content="2022-11-08T11:31:44.330Z">
 <meta property="article:author" content="HuangHao">
-<meta property="article:tag" content="调研">
+<meta property="article:tag" content="project">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/page/home/table.webp">
   
   
   
-  <title>电控平移台调研 - Hexo</title>
+  <title>模具深度检测 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -198,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="电控平移台调研"></span>
+            <span id="subtitle" data-typed-text="模具深度检测"></span>
           
         </div>
 
@@ -209,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-10-31 17:08" pubdate>
-          2022年10月31日 下午
+        <time datetime="2022-11-08 19:31" pubdate>
+          2022年11月8日 晚上
         </time>
       </span>
     
@@ -221,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          11k 字
+          500 字
         
       </span>
     
@@ -232,7 +230,7 @@
         
         
         
-          89 分钟
+          5 分钟
         
       </span>
     
@@ -270,25 +268,29 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">电控平移台调研</h1>
+            <h1 style="display: none">模具深度检测</h1>
             
             
-              
-              <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">
-  <script id="hbeData" type="hbeData" data-hmacdigest="0fd6756c392b1eb317459efe987b703ee122adeeb1bf95373ab63f29773a3597">b123383788ad1eee3656cbdac13ed0a951bcd8d6aff944d3375891cf11a0f6e8a28f896d0311fcd180067546166929c0f8722f5478b16dfe4bf6a5fdf16c0d4f1ff771302d6890b3044c9eba956c31578dc7b98a8800b8451658dab88ae6bd43d9f654171c614341b89255b73c03d7aaa7ab36a2d0d2152b2eb390d730f741c9f4455b699f16328a9f9801419f03bebb1e8df72049fe499a71e20b4fc7703323893a92beec50334dd324c29735a44972e6191a1088a8380d721986a7fc18df7587a64f7258ee5cf4f84c6889ab89d82ffb766a7cb83431549a127ec8a6b793ea05df5b538b8c225e330267d81f6d8c44e86c1848070efb06073164af09883c81118e4bdbd49a470dbaa693e9accc41bdc5c7a50717bc67f0f8e04b367b6ee98cac4e8da11c0f334cf07a144def8e9ff7ef2bd1a6293b3c4afe204d04f585c61e801afd1dde8f68edb35509f54c48eb308bacaa43fb2844ebb561a8e8de8291f1b58841d3a16ebdf98503873d2ffdcc471a62ea4d8dfea9f75a4129401f787384baae8420525a292360d558cf551c5ea51c677a7d31e270bc354b96cc9a06b1360699403296e345cbf1358ee50df2955a299dc48b384e9768a07402690a2550cfd99b15b5c4f6fb081ac81c8623418b128aaca66477275ae2d5f023b5cff62aa67f6abd14aaffe86d284e80adff4d9aaf7f65466647ca014e9861a393a9b000c05b6b7c014db08ebe68e85101cbc5e5c9e48066ac512f7297989b909257acf498c6cf08fd97d98d304f7877ad6e7898e9d1f14d35956f942cbf22a71357c88531ac1fdce2179f79b8df062e6554b6a62ce50d06a30494a4ca224951db940dab3dba876b869d55330e776b4880f7aa0222681537cdce2765d3abc30e1513fba89ba5fda9500147cf5d7178c3f4e1115617f537611e87dfc4bfc7a20060e6498b4120f822e105f7d91206cbe80dbd377b6f1714225f71c82557fce92c8f99822a5531015052cdbf2960bddfe11df11446e44099a030d1234acbc7c4170ce2031b84522b8095e85d5edaaf56e0f77edc496d2366f2054220c5724d2eeed48f77ae2f255c5388186a5751efb06b4ddfc1b3769b03c3ab4136d6f08a8aebd8a7fe29b4c402d680f7c9a2ed52b8c961c80b5ae75d9b200017b26db00c393677350c7fff6afee08c1d1486df5e3961608a70b008e400a1bf7bb5d5025a4f5ca03eb217e096237aeafe9ff42cd53e5e89504e68324fbc5166eabcab2cecdf55441aaf6f1400106febe4a9efd9d95a858e641a1b88ae00407dd03ba73372e53011367e3e0c6032c9240262d9120a0ce1843857182c1cd051916e810ccc267cf452ae04b63e1bbcdc3ebcefb92b726529048902bfcae6c8c962981842ea16a7160caf9e383b0906ed700b381081721b6db8094d3a171289a45ff68d9dace58d73411354a7e49b3341e6bbd04a533c348022d59ced2e378d702afffdcaf0a107d51383b6382d9995ad2c2d692398f36b366310faa279c66bb857e808f2ffd5ec4ff986e18a6ec2b79e38fc49c8fe16e5aa69c4344c58a29b1f59dc1b980882dfffb9553045a0e31dfac57af69d9a47b14321d7b534625e6795d295a951f9c2a7655e263f43f0f7d7f4ad529a4d7221614653fffd3ae730ee97b0fcaa3a7b62e81a3e395be6183091055045c02d1c14d18a723eec1629e55c894bfeda7f89ad4df5af8e4f00b889ce59e4b6f0cdab503a92471d8194c31cdc534806276b31c4701c1bd9b57db308d9fb895304fa6fab95aed3dd2b4eb2f2201af9752fea0214d95443683288b91c49889d8b303bea798b86f2b912ff2a55742897544e6c8f537d4b94b75dac34b143a0e9d1411e78721fce5b031f49ce87def873957c49ef86aa06829a8caf00d65a0eac312a602c5856fcbfeb14eb4da6e0f4dc4b69d2e10a6ec2160955767c263286fc06ddd162775b2ac29873744e85746a43325b2150cbe0e94e0f461861e54e450a27aded3136ff20161698cb3968bbbc63a1188ef730176a3d826d99a5bcfc485a3cc481ed73c2a774c35cd5a0b02df019140bbd824e59ede644a814b63e09bc08678eaaf20713e29f7feb0f2de64f444228ced0c90ff84a66f6d9c5ea45743a88a0b1f4c993bf17cf8023dad8d544534cf3e834d1457cd1a4bdd281205e232d0df0cbbf8b1cc2e0e80bf3c6202a857dcc355e2614bf5cf79fe5496b090dd9633c40e55c769acb80dd650e90e6c042d44e6336e770e477fcf52304925fd96844ead8ae35b9b02f27684fc6fd0cb9e8d6d78ba53d108d1fce9670da0499fbd12f31e10cc67d93a91e5060fe97a586508d65cac4cd8935a0ec2dfddc1d9042e2cbe3b41f30317f4d3cfe895f09d97a728a79e187cdb950ddf79ba633eff32e23601da843bf5dd515495ee169634098d3288eb3b96f3936f7c10b808459a3b0e969b8c8e119dffc89c3e58dc3e1af4937679bc1d02630685eefe98fea7416f034044831bb2169d41b7b759b3359b4b67349ff01774ff643ad29b9765acd325899f1b9cc2b3aa5742a1725043394ff8632b17a6c9d4684d67662a7e1a8a2218190eeffd03bd91499e7efd4d30bb1baa2793791da3b9aacae49a5ee995db4423b6d3ca55b18f54fa3d78b2c7c62d911aae08cdc0100e281970a1af0f4cb5140804e55a9a0e1fbd273bcfe67511e90c9c3347f06987d6b2a907f5c810cd5cdcd97fb216a1cc7f92fb704ba4cdadab662cf268eafb5ccccf0a9be13be045a5bf1081e611ec1ab35883e4fd04b440250fd58f3e50e2fc3d53f3a88ae7e1ccb3e14f8cb8143832a69b3777647b842aa50845e94985cda3a370dd267efcb77ae9c6ad6f0c69fe0f7a7fa848e2512e12586cac096a3633a4a5b12fd6ed3106c705a02eedb9c0a96eb3674056f5fec4a519f8d2df27b18528edb8e3dad9720614ac1535b5af05d692aefdcd877c5af35b8c561412bf3fc380ef76b1d163fdb0d1f78a7b9886385711f30e0f8b30fb260321b111220281d4d08183f5ddfce6380662fba28362166ef6130f1cc76796e8272f5781e1f0d63cf5b8e532e06124e2cf71bfc30ace7f96f1d821a43e8b4374c2972ab271e135a14e93d0e7aff2da2a5a68a976c70ff19600dd7db1136955eb21b714969b3a70a2e112c3d910b2977e08c8546d87a94ea5a418e4eb498c5a05f0a9b3e2ff6ddb91cf0dcd02f720b9110fda48a1c5c65a56c0087154a2ee68e95031ac8a258e4fae09cb152d564dd1e528cea59cce953977b63ba35586a8ef412ed1eea7af1c31b25caf0fcb3d54e4b929d1089ae94f39c11d1b0a5566c77591f4c43cf1663d3825919989033d9737c734078af98e5f664fa7a1c2b6ee221221ca0b4eebfbd335bebb62eeef364481c5d931fd9dc6209561f841578d5d3013096187ba58538df6dcc802226a12762955b80374f4764f0c2906535c697b801b94cce6cee5bc918178fcf40e206dcd389ef79a489331ba7326acfb57b3c0d262ddcc3a78180d77132d29f54bc6243a9f8b0d0f3b8268c542cb5b34108359b28d52200c5a72fd3b8f623af52820ac5695a8e4132950b254bfa66f1df1ba90b878f0a937296fe6fb4a4aad269b71685333699e774128a5bde7c76b967955577ec989730b6eaabb3e17873a3c8c2c0bd342fca6287f621049b67b238d87d305fcfb7f7e1131e0e1be02217ebf8b4bc035f9fb141ca72b5f33ad0f299848e57cff027b16f95fcb6670bfd31431e5b0f5b3f1f4135d333310648352b40c7e7b93e92ef14288dc7fee511672212dac385b26aa11721b8d5e039a1f4f06204ffbb678d50bb2bb394b2f4cf677488d5435455e43c9cbe8dc0334a22581c16a9500d1060de3ec6e89b6fca3c159074e8669688c291c52964a5337cb4b42283c546e7e05b1fe9c9370f4c39799ead0094b84b84db6f686b74d64cff218aab504f31743d280abc050b0009602e2561e4ae421763e073e004a379834a9b15d9748bc882563c9ebc5407ec5d8af534a749960594b0f0ac14eebbce0143999b78aa31cc6f44dce0ba3d7fce4681ac39acbab5cc587c015ce85b8158a1fd7562a0a7f0b6830ea3b4520ecbb6a238229fc66fbce3581dfb43e44fee9fe3c98893529364064ac4bb0e03d772afb68611d56dd8906090e0e76ef1b467256caf8064a20dea7167208b79ef0634d443699fe444e442f80948f566e0f9aab77a97f30cd74872a339378729c8ed0ab88c780696ae3ed0650db4da2bcde8f0ee869eb8c73151399448783a193dade3da51b9bfb74f72a442435fc5e1141b6e17083db177100b060f8947a9ff40ce670dba41cfc9482cc87369d44136ff0101d95075dd04db10ce53631170d747afb613f7cbc39bec60f2cefda4495950bf2d7f7f0918f590ac50678a5bc87cf255246ca0e3ab1628ca054666bb1ffb0768c43aed750114cd8a152c06d9709c22f90f302f92e984a8b1746de393558ed2e77ebaf3507dd1205ffd0d7086c38eb6466b69db10b68b167148f94ecc9995b2e5b5ce9e1907ddc3728cc57d3325973fc7965f18fbf6de042b8968463e3a36466d8f700292f9397f83e0133d920c5b571a4cf783dfdc03f9a01ac570b21631ea9095c7be9c5e8d6b391203565cb3d8d1d67499bb75b28a17e5cd65f0ddbc015e46a522b24f82220d2a1dc55127fff8c556a4f39897aa87484dd88d83ad4411d4e3a66813233a757c64c984d8bd0ad9004555831ba9a11cc026df85c793559702071f2a088bb79f72cab794fc83a9862f36db3f67a481b68ed6c7a24ac26fb0f6821dfeba4c243433d90d4aecaf8383779fe6e0a4198142a7422cee522ac89da35d45e03e90c7777cd77cf7d534fc588c8d9319aef852b3521f4039039135090df154a6ecf85909e76d65968e6852c0201d4a8beb5ad990e538e0cfc01f83b9aa5625bf5345f7d8a734f75871df802b0657b7e48772c19f5d1fdc30bc4f55590352f5748042d96d59ce8aaa2ff7fc9a9b51bd0a2f67f10363c49dfae17692b560b97558965d30bbb529ef4f3df048d7281e05c99c221091653c4fef4ed4b3643ed433a54d2d3f2a7c84b1442de0dab02a1fe743130e6983dacad83a1ebe21b21eaa112e65930369461531160a3eb91f3f145ef17010eb92f718cb055deb4713ed91f84a63ebce2b00c2bc88d2bfda9581fb22e03c91ebb09f0a9d80569336f3b5f3d92fb22cf38d8a200f271846ad1f1a90640ac44e48745f39f9af74e88fe2d717d944f69e528df5598d4a394acda2600e7fd68ad05d16ef8d9632649b6c49c94844b4c208e188944da0682724fe46be130917168bb607dcc5460a28cc5812bd5dd076bff63874e11138cc7f39f61084353cf18c071c1b4561522c71b9f53f3595f48daa8282de566c7d9bcbfa9b388e6af5cfa0914e7c7924981d3b29d14fc2fe0dc5433cadeb014074de732ade6ed7c5692d422c7b6818b642b993ab3f66072ee75d8dec790d2bbb508309b2f326b3fa05acb4356d391ffef02c5de9ab4d19c80018089c73c69c9ac33db55fae8bc49cad289e527c5799b835c3848374543efcd318efbe7fe42ecbd79be11d01a9fa3012ae82e0850e55de75e8482d6a4afa753eb79e7383d68f6efcc138744946705786df619bf1a746dd12659f089bf1e19570ee520cb818487805cd95311cd7702f8dd360bce6f57710ee9afb8028007e1f2b6bf66affba0b049b3927d7972c65e5bd00ff85972abe813e9eb9f281c33fbf67364c297015afc85aadaf88ad609059a2e5eae78ef7d7e1df25d3167497714d5b0a3a369c1cedea9bece1598745f837211e80d7d9284322b13a6587145f93aaadd86938038dba730b5a5f675388467cad08e9078e362f60381c5ecbe6745f505372f7bfef28a438b9ccdfc56e62131e2c3d7964e06d7a4c76b47f91c67fb1e6cc5c2fce733193bfebe059a262029a116a8597a7fcb00760ad9732351692acf176f364537c474c6e4b6ade023eca1d846003e38a9dfa03181f44962337d5f14de1bf4214a33a9758035007a4bbb9757f79f738e07e0b9adce8481c0e27b7f89b118ac26aa9de1e6ed3f751057c8eb5ea0ff050c45f136e6e98969a9d3307af198c037350f4bc97f6b464cc2648a513b2e18d002dcd75476fcf591fe9b4497342b6925c866e95caac32ac36cf9ecba731360b8cf251c361851de9ad7a98feabf4a1bbc5f569ed95e86a3bda66d2f37b06870fed58956c2a12630033de247810da3eb37fc1d0bfee4703372f3ca1484dc9189beeb4ed7cea0cd3607b6aadc5366e355c56aa7bd47c6e1100048be50df7a9f4bbdebf080f0226544d2150501e60e1c1534f7a7efe16eaf74dd394b518eb238e7a484b3e72582192508b191b31b636f95565c0717cbbc70dbad4ebe7e9a3a3618a3f25c84cdf771e900623b4219ecfbe3c65fba9af57b2bd3f59c7881563cfcd75b0f66a531f49ed6ce1b4d1f1796e76e9f0b2c8821c3f6d68dc781051dd9c4e0094211a84a77fd02039caaec173b8f27051204836bb904c833b4cfe3dd8cfc8d75dba71a202f370d465a22583f0f222beddb2ba115dc31be202fe66bfda4f73242c079324161df59e4f5885d2196dd9e061f0d573380715ed045f5ffa8c7b9c2b40be51da6ea2f58cdb7014701f563a4e9f78dce5151b44f715d95489888cdbfc9dbcce8823b19610335b7981d7f6c52163e40f860106de97c7bbcc1e9283b9114aa4076b639c1c874340ca8adb6a4874e338d3067c35b4aa650f493e378a45e54499a6cdab3754c2af83483a40d5187a39101af040d7be235fa53fcaec588ff80e0eb41ff83b2d966029f9e9f82bcfdf3aa448c2217ecfbbc6165457324620266536baa38ed829794e831b05c32247e175f3e062e007faf90e2ab205dac6443a8e7b86d6cbdccf0323f705aa5c41f93dd9bbae2ac9decb8ad8949caae4c2dddc2247b3a91336cceb0d8e7a199a11b2c1aa04156f29966f375dea47fb7f080332b448b6128a6a79acd040f2606ca5df10382add68facd38fb94607214e7fcddc8c0f3e86e9fd88ea32c6dcfb24c08e6e072b235349b51d3416a94ffcd7da061b892cfd200e5492178a051c6b7728b0ec4c8b394f0c9acae7881b7802cb63c6fe8e76893320b9904ffb3c0c148c65b349d0ea20616bd7ea1fe2cf47803e144782a576746ad51f367f0ef225c2b5723e2006883549b3e8023ef9dc2a2a9d85f9e37c2a2b317a12623ad3157e5cbb7d986a14e7d6c72f7068565a12edc6861aa7b94635a149afb9d149f81f7033a53777986ff925821235093be47ca3d77ab5a5dfd71dbbe48589dcd0d9d0e9b062d5aca65649d7ad1c331894c34d2f1807b445171d5659ac4501b3beea7c01c8ec70366ec427f771f6b0e8a8eb8a9d1ecdd5a51be52c59b932e2e6b89658087d464ab1d125f08e627c5d6ad5e8867119e182f9d0ec5bbbd1fc1b0383c653331ed14b5cd8f245d638219b3b9b271d5d92ef9fbee35fd5739dacc68ae0ea584b6ac4b86cc1e95c77ad6003617b56fe6f3187d1b9031</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，这里需要密码。</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
-              
+              <div class="markdown-body">
+                
+                <h4 id="方案-1"><a href="#方案-1" class="headerlink" title="方案 1"></a>方案 1</h4><ol>
+<li>通过RGB图像将样品模具按编号进行分类（使用深度学习图像分类，或OCR字符识别编号以区分模具，或手动输入编号挑选模具）</li>
+<li>通过工业级线激光3D相机拍摄模具的点云图（也获得了深度图）</li>
+<li>使用高斯球算法对点云图进行区域分割（深度相同的区域划分为一组，得到不同深度的多组区域）</li>
+<li>分割后得到每个区域的深度信息，将其与正品模具的深度信息一一对比，从而判断样品模具在该区域是否堵塞</li>
+</ol>
+<h4 id="方案-2"><a href="#方案-2" class="headerlink" title="方案 2"></a>方案 2</h4><ol>
+<li>给所有正品模具拍摄RGB图和点云图，手动设置每个区域的标定点，将图，标定点的坐标与该区域标定点深度（由点云图得到）的均值做持久化存储</li>
+<li>通过RGB图像将样品模具按编号进行分类（使用深度学习图像分类，或OCR字符识别编号以区分模具，或手动输入编号挑选模具），</li>
+<li>通过工业级线激光3D相机拍摄模具的点云图（也获得了深度图）</li>
+<li>从数据库中调出正品模具的RGB图和标定点的深度均值，通过对齐样品的RGB图像与正品的RGB图像得出仿射矩阵$H$</li>
+<li>$H$乘以正品标定坐标得到样品标定坐标，在样品点云图上通过样品标定的坐标读取深度，并与正品中该标定坐标的深度做比较以判断是否堵塞</li>
+</ol>
+<h4 id="方案-3"><a href="#方案-3" class="headerlink" title="方案 3"></a>方案 3</h4><h4 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h4><p>8张模具跑算法，测试该批模具编号的识准率</p>
+<h4 id="硬件可行性分析"><a href="#硬件可行性分析" class="headerlink" title="硬件可行性分析"></a>硬件可行性分析</h4><p>激光3D相机</p>
 
-              
+                
+              </div>
             
             <hr/>
             <div>
@@ -298,7 +300,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E8%B0%83%E7%A0%94/">#调研</a>
+        <a href="/tags/project/">#project</a>
       
     </div>
   
@@ -310,8 +312,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>电控平移台调研</div>
-      <div>http://example.com/2022/10/31/电控平移台调研/</div>
+      <div>模具深度检测</div>
+      <div>http://example.com/2022/11/08/模具深度检测/</div>
     </div>
     <div class="license-meta">
       
@@ -323,7 +325,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年10月31日</div>
+          <div>2022年11月8日</div>
         </div>
       
       
@@ -355,18 +357,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/11/08/%E6%A8%A1%E5%85%B7%E6%B7%B1%E5%BA%A6%E6%A3%80%E6%B5%8B/" title="模具深度检测">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">模具深度检测</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/10/11/Linux%E6%B7%BB%E5%8A%A0%E7%A3%81%E7%9B%98/" title="Linux添加磁盘">
-                        <span class="hidden-mobile">Linux添加磁盘</span>
+                      <a href="/2022/10/31/%E7%94%B5%E6%8E%A7%E5%B9%B3%E7%A7%BB%E5%8F%B0%E8%B0%83%E7%A0%94/" title="电控平移台调研">
+                        <span class="hidden-mobile">电控平移台调研</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -532,23 +528,6 @@
   
 
 
-
-
-  
-  <script defer>
-    if (document.getElementById('hbePass')) {
-      Fluid.utils.waitElementLoaded('hbe-prefix', function() {
-        var hbePrefix = document.querySelector('hbe-prefix');
-        hbePrefix.parentElement.classList.add('markdown-body');
-        Fluid.utils.retry(function() {
-          if (Fluid.boot && Fluid.boot.refresh) {
-            Fluid.boot.refresh();
-            return true;
-          }
-        }, 100, 10);
-      })
-    }
-  </script>
 
 
   
